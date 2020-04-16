@@ -68,18 +68,25 @@ export default StyleSheet.create({
     color: "#333",
   },
   cardFooter: {
-    padding: 30,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 30,
+    paddingBottom: 30,
     backgroundColor: "#eee",
     borderRadius: 4,
+    flexDirection: "row",
   },
-  annotarion: {
+  annotation: {
     fontSize: 12,
     color: "#333",
+    paddingLeft: 10,
+    width: "85%"
+
   },
   saldoOculto: {
     height: 41,
     backgroundColor: "#eee",
-    // margin: 20,
-
+  },
+  iconMsg: {
   }
 });

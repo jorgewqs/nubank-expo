@@ -10,5 +10,5 @@ export default StyleSheet.create({
     backgroundColor: "#8B10AE",
     paddingTop: BarHeight,
     justifyContent: "center",
-  },
+  }
 });

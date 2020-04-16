@@ -1,5 +1,5 @@
 import React, { useState, useEffect }from 'react';
-import { View, Text, Image, Animated, TouchableOpacity } from 'react-native';
+import { View, Text, Image, Animated, TouchableOpacity, ScrollView } from 'react-native';
 import { PanGestureHandler, State } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 
@@ -68,7 +68,9 @@ export default function Card() {
   return (
     <>
     <View style={styles.content}>
+
       <Menu translateY={translateY}/>
+
       <PanGestureHandler
         onGestureEvent={animatedEvent}
         onHandlerStateChange={onHandlerStateChanged}
@@ -100,12 +102,22 @@ export default function Card() {
             { showEye ? <Text style={styles.descricao} >R$ 175.418,32</Text> : <View style={styles.saldoOculto} ></View> }
           </View>
           <View style={styles.cardFooter} >
+            <Feather style={styles.iconMsg} name="credit-card" size={28} color="#666" />
             <Text style={styles.annotation} >
-              Transferência de R$ 60,00 recebida de Jorge Wendell Queiros Santos hoje às 08:00h
+              Compra em Conrado Carlos Freire de R$ 5,50 no débito 19 fev
             </Text>
+            {/* <Text style={styles.annotation} >
+              Transferência de R$ 60,00 recebida de Jorge Wendell Queiros Santos hoje às 08:00h
+            </Text> */}
+            <TouchableOpacity onPress={() => {}} >
+              <Feather style={styles.iconMsg} name="chevron-right" size={28} color="#666" />
+            </TouchableOpacity>
           </View>
+
         </Animated.View>
+        
       </PanGestureHandler>
+      
     </View>
     <Tabs translateY={translateY} />
     </>
