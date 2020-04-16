@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Nubank Expo",
+    "slug": "nubank-expo",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#8B10AE"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "Clone do banco Nubank em expo.",
+    "githubUrl": "https://github.com/jorgewqs/nubank-expo.git"
+  }
+}
